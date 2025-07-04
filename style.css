@@ -1,92 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
 
-:root {
-    --cor-fundo: #1e1e2f;
-    --cor-rosa: #ff5ca2;
-    --cor-texto: #fff;
-    --cor-caixa: #2b2b40;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--cor-fundo);
-    height: 100vh;
-    padding: 2rem;
+  background-color: #1e1e2f;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 1rem;
 }
 
 .container {
-    background: var(--cor-caixa);
-    padding: 2rem;
-    border-radius: 1rem;
-    width: 100%;
-    max-width: 700px;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    box-shadow: 0 0 25px rgba(255, 92, 162, 0.2);
+  background-color: #2b2b40;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 0 25px rgba(255, 92, 162, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 h1 {
-    color: var(--cor-rosa);
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: 700;
+  color: #ff5ca2;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
 }
 
 .descricao {
-    text-align: center;
-    color: #ccc;
-    font-size: 1rem;
+  color: #ccc;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
 }
 
 #entrada-de-texto {
-    background: #191927;
-    color: var(--cor-texto);
-    border: none;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    font-size: 1.1rem;
-    resize: vertical;
-    height: 140px;
+  background: #191927;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+  resize: vertical;
+  height: 140px;
+  outline-offset: 2px;
+  outline-color: #ff5ca2;
 }
 
 #entrada-de-texto::placeholder {
-    color: #888;
+  color: #888;
 }
 
 #botao-palavrachave {
-    background: var(--cor-rosa);
-    color: #000;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    font-size: 1.3rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
+  background-color: #ff5ca2;
+  color: #000;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #botao-palavrachave:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 15px rgba(255, 92, 162, 0.4);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 92, 162, 0.7);
 }
 
 #resultado-palavrachave {
-    color: var(--cor-rosa);
-    background: #141420;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    font-size: 1.2rem;
-    max-height: 200px;
-    overflow-y: auto;
+  color: #ff5ca2;
+  background: #141420;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  max-height: 200px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  user-select: text;
 }
 
