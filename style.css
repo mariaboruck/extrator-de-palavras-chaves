@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
 
 :root {
-    --cor-fundo: #0e0f11;
-    --cor-texto: #f0f0f0;
-    --cor-secundaria: #1c1f24;
-    --cor-botao: #00ffe7;
-    --cor-botao-texto: #000;
-    --cor-borda: #2a2d32;
-    --cor-destaque: #00ffe7;
-    --sombra-suave: 0 0 20px rgba(0, 255, 231, 0.2);
+    --cor-fundo: #1e1e2f;
+    --cor-rosa: #ff5ca2;
+    --cor-texto: #fff;
+    --cor-caixa: #2b2b40;
 }
 
 * {
@@ -25,47 +21,42 @@ body {
     background: var(--cor-fundo);
     height: 100vh;
     padding: 2rem;
-    flex-direction: column;
 }
 
 .container {
-    background: var(--cor-secundaria);
-    padding: 3rem 2rem;
+    background: var(--cor-caixa);
+    padding: 2rem;
     border-radius: 1rem;
-    box-shadow: var(--sombra-suave);
     width: 100%;
-    max-width: 800px;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    border: 1px solid var(--cor-borda);
+    gap: 1.5rem;
+    box-shadow: 0 0 25px rgba(255, 92, 162, 0.2);
 }
 
 h1 {
-    color: var(--cor-destaque);
-    font-size: 2.5rem;
+    color: var(--cor-rosa);
     text-align: center;
+    font-size: 2.2rem;
     font-weight: 700;
-    letter-spacing: 1px;
 }
 
 .descricao {
+    text-align: center;
     color: #ccc;
     font-size: 1rem;
-    text-align: center;
-    margin-top: -1.5rem;
-    margin-bottom: 1rem;
 }
+
 #entrada-de-texto {
-    background: #121418;
+    background: #191927;
     color: var(--cor-texto);
-    border: 1px solid var(--cor-borda);
+    border: none;
     border-radius: 0.5rem;
-    padding: 1.5rem;
-    font-size: 1.25rem;
+    padding: 1rem;
+    font-size: 1.1rem;
     resize: vertical;
-    min-height: 150px;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 140px;
 }
 
 #entrada-de-texto::placeholder {
@@ -73,32 +64,29 @@ h1 {
 }
 
 #botao-palavrachave {
-    background: var(--cor-botao);
-    color: var(--cor-botao-texto);
+    background: var(--cor-rosa);
+    color: #000;
     border: none;
     border-radius: 0.5rem;
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
-    font-weight: 600;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
     cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 255, 231, 0.3);
+    transition: 0.3s;
 }
 
 #botao-palavrachave:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 20px rgba(0, 255, 231, 0.5);
+    box-shadow: 0 0 15px rgba(255, 92, 162, 0.4);
 }
 
 #resultado-palavrachave {
-    background: #0d0f11;
-    color: var(--cor-destaque);
-    font-size: 1.5rem;
-    padding: 1rem;
+    color: var(--cor-rosa);
+    background: #141420;
     border-radius: 0.5rem;
-    border: 1px solid var(--cor-borda);
-    max-height: 250px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    max-height: 200px;
     overflow-y: auto;
-    white-space: pre-wrap;
 }
 
