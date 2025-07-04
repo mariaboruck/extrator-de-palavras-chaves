@@ -1,27 +1,27 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-<html lang="pt-BT"> 
-  <head> 
-    <meta charset="UTF-8" /> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-    <title>Extrator de Palavras-Chave</title> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css" /> 
-  </head> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔍 Extrator de Palavras-Chave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-  <body> 
-    <div class="container"> 
-      <h1>Extrator de palavras-chave</h1> 
-      <textarea 
-        id="entrada-de-texto" 
-        placeholder="Digite ou cole seu texto aqui..." 
-      ></textarea> 
-      <button id="botao-palavrachave">Extrair</button> 
-      <div id="resultado-palavrachave"></div> 
-    </div> 
-      
-    <script src="script.js"></script> 
-  </body> 
-</html> 
+<body>
+    <div class="container">
+        <h1>🔍 Extrator de Palavras-Chave</h1>
+        <p class="descricao">Cole um texto e clique no botão para ver as palavras mais importantes!</p>
+        
+        <label for="entrada-de-texto" class="visually-hidden">Área de texto</label>
+        <textarea id="entrada-de-texto" placeholder="Digite ou cole seu texto aqui..." rows="8"></textarea>
+        
+        <button id="botao-palavrachave">✨ Extrair Palavras-Chave</button>
+        
+        <div id="resultado-palavrachave"></div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
