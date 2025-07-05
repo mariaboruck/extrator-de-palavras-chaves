@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
 
+:root {
+  --azul-escuro: #1e3a8a; 
+  --azul-hover: #3b5cc0;  
+  --fundo-claro: #2b2b40;
+  --fundo-textarea: #191927;
+  --texto: #ffffff;
+  --texto-fraco: #cccccc;
+  --sombra: rgba(30, 58, 138, 0.5);
+}
+
 body {
   background-color: #1e1e2f;
-  color: #fff;
+  color: var(--texto);
   font-family: 'Montserrat', sans-serif;
   display: flex;
   justify-content: center;
@@ -13,19 +23,19 @@ body {
 }
 
 .container {
-  background-color: #2b2b40;
+  background-color: var(--fundo-claro);
   padding: 2rem;
   border-radius: 1rem;
   width: 100%;
   max-width: 700px;
-  box-shadow: 0 0 25px rgba(92, 147, 255, 0.2);
+  box-shadow: 0 0 25px var(--sombra);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
 h1 {
-  color: #5c93ff;
+  color: var(--azul-escuro);
   font-size: 2.2rem;
   font-weight: 700;
   text-align: center;
@@ -33,7 +43,7 @@ h1 {
 }
 
 .descricao {
-  color: #ccc;
+  color: var(--texto-fraco);
   text-align: center;
   font-size: 1rem;
   margin-top: -1rem;
@@ -41,8 +51,8 @@ h1 {
 }
 
 #entrada-de-texto {
-  background: #191927;
-  color: #fff;
+  background: var(--fundo-textarea);
+  color: var(--texto);
   border: none;
   border-radius: 0.5rem;
   padding: 1rem;
@@ -50,7 +60,7 @@ h1 {
   resize: vertical;
   height: 140px;
   outline-offset: 2px;
-  outline-color: #5c93ff;
+  outline-color: var(--azul-escuro);
 }
 
 #entrada-de-texto::placeholder {
@@ -58,8 +68,8 @@ h1 {
 }
 
 #botao-palavrachave {
-  background-color: #5c93ff;
-  color: #000;
+  background-color: var(--azul-escuro);
+  color: #fff;
   border: none;
   border-radius: 0.5rem;
   padding: 1rem;
@@ -71,11 +81,12 @@ h1 {
 
 #botao-palavrachave:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(92, 147, 255, 0.7);
+  box-shadow: 0 0 20px var(--sombra);
+  background-color: var(--azul-hover);
 }
 
 #resultado-palavrachave {
-  color: #5c93ff;
+  color: var(--azul-escuro);
   background: #141420;
   border-radius: 0.5rem;
   padding: 1rem;
@@ -85,4 +96,3 @@ h1 {
   white-space: pre-wrap;
   user-select: text;
 }
-
